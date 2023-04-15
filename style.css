@@ -1,20 +1,48 @@
-/* Jerica Smith Copyright 2023 
+/* Jerica Smith Copyright 2023 This is a test
 */
+@font-face {
+    font-family: "Abel";
+    src: url(fonts/Abel.ttf);
+}
+
+@font-face {
+    font-family: "Raleway";
+    src: url(fonts/Raleway.ttf)
+}
 
 * {
     margin: 0;
     padding: 0;
+    display: grid;
 }
 
 body {
+    width: auto;
+    height: auto;
     background-color: #000;
     color: #FFF;
+    font-family: Raleway;
 }
 
-li {
+h1 {
+    font-family: Abel;
+}
+
+a {
     text-decoration: none;
 }
 
 a:visited {
     color: #FFF;
+}
+
+button {
+    height: 25%;
+    width: 25%;
+}
+
+#logo {
+    width: 100px;
+    height: 100px;
+    filter: invert(100%)
 }
