@@ -37,8 +37,8 @@ a:visited {
 }
 
 button {
-    height: 25%;
-    width: 25%;
+color:blue;
+background-color: aqua;
 }
 
 #logo {
