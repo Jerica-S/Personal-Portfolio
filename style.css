@@ -1,8 +1,10 @@
 /* Jerica Smith Copyright 2023 This is a test
 */
+
+
 @font-face {
-    font-family: "Abel";
-    src: url(fonts/Abel.ttf);
+    font-family: "Alice";
+    src: url(fonts/Alice.ttf);
 }
 
 @font-face {
@@ -13,36 +15,82 @@
 * {
     margin: 0;
     padding: 0;
-    display: grid;
+
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
-    width: auto;
-    height: auto;
+    height: 100vw;
+    width: 100vw;
     background-color: #000;
     color: #FFF;
-    font-family: Raleway;
+    background-image: url("images/temp-grad.png");
 }
+
+main {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(10, 10vw);
+    grid-template-rows: repeat(10, 10vh);
+}
+
+nav {
+    grid-column: 1/4;
+    height: 5vh;}
+
+ul {
+    display: flex;
+    list-style: none;
+}
+
+li {
+    padding: 0 10rem;
+}
+
 
 h1 {
-    font-family: Abel;
+    font-family: Alice;
+    font-size: calc(3vw + 1em);
+    font-weight: normal;
 }
 
-a {
+h2, p {
+    font-family: Raleway;
+    font-weight: normal;
+}
+
+.intro {
+    display: inline-block;
+    grid-column:1/11;
+    grid-row: 1/11;
+    background-image: url("images/temp-bg-the-great-wave.png");
+    background-repeat: no-repeat;
+    background-size: 99.5vw 55vw;
+}
+
+.title {
+    grid-column: 4/6;
+    grid-row: 2;
+}
+
+.about {
+    display: inline-block;
+    grid-column: 2/5;
+}
+
+nav a {
     text-decoration: none;
 }
 
-a:visited {
+nav a:active{
+    color: #fff;
+}
+
+nav a:visited {
     color: #FFF;
 }
 
-button {
-color:blue;
-background-color: aqua;
-}
-
-#logo {
-    width: 100px;
-    height: 100px;
-    filter: invert(100%)
-}
