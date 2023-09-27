@@ -1,4 +1,4 @@
-/* Jerica Smith Copyright 2023 This is a test
+/* Jerica Smith Copyright 2023
 */
 
 
@@ -31,7 +31,6 @@ html::-webkit-scrollbar {
 body {
     background-color: #000;
     color: #FFF;
-    background-image: url("images/the-great-wave-gradient.png");
 }
 
 main {
@@ -51,6 +50,7 @@ section{
 nav {
     grid-column: 1/11;
     height: 5vh;
+    background-color: red;
 }
 
 nav a {
@@ -87,7 +87,7 @@ h2 {
 }
 
 p {
-    font-size: calc(1vw + 2em);
+    font-size: calc(1vw + .5em);
     padding: 3rem 0rem;
 }
 
@@ -120,8 +120,8 @@ p {
 #title-bg {
     grid-column:1/11;
     grid-row: 1/11;
-    background-image: url("images/bgs/desktop/temp-bg-the-great-wave.png");
-    background-repeat: no-repeat;
+    background-image: url("images/bgs/desktop/temp-bg-the-great-wave.png"), url("images/bgs/general/the-great-wave-gradient.png");
+    background-repeat: no-repeat, no-repeat;
     background-size: 100vw 55vw;
     z-index: -1;
 }
@@ -132,18 +132,17 @@ p {
     text-align: center;
 }
 
-#about-bg {
+#about {
     grid-column: 1/11;
-    background-image: url("images/ocean-bg.png");
+    grid-row: 12/21;
+    text-align: center;
+    background-image: url("images/bgs/general/ocean-bg.png");
     background-repeat: no-repeat;
     background-size: 100vw 55vw;
-    z-index: -1;
 }
 
-#about {
-    grid-column: 2/10;
-    grid-row: 3/8;
-    text-align: center;
+ #about p{
+    font-size: 4em;
 }
 
 #portfolio-bg {
