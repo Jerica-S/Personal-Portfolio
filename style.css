@@ -48,9 +48,8 @@ section{
 }
 
 nav {
-    grid-column: 1/11;
     height: 5vh;
-    background-color: red;
+    background-color: rgba(0, 0, 0, 0.336);
 }
 
 nav a {
@@ -139,6 +138,16 @@ p {
     background-image: url("images/bgs/general/ocean-bg.png");
     background-repeat: no-repeat;
     background-size: 100vw 55vw;
+}
+
+#fish-bg {
+    display: grid;
+    position:absolute;
+    grid-column: 1/11;
+    grid-row: 11/21;
+    min-width: 100%;
+    min-height: 100%;
+    opacity: 50%;
 }
 
  #about p{
