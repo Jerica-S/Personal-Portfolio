@@ -34,17 +34,17 @@ body {
 }
 
 main {
-    height: 100%;
-    width: 100%;
     display: grid;
     grid-template-columns: repeat(10, 10vw);
-    grid-template-rows: repeat(10, 10vh);
+    grid-template-rows: repeat(40, 10vh);
+    width: 100%;
+    height: 100vh;
+    text-align: center;
 }
 
 section{
     width: 100%;
     height: 100vh;
-    position: relative;
 }
 
 nav {
@@ -90,30 +90,23 @@ p {
     padding: 3rem 0rem;
 }
 
-.wrapper {
-    display: grid;
-    grid-template-columns: repeat(10, 10vw);
-    grid-template-rows: repeat(40, 10vh);
-    width: 100%;
-    height: 100vh;
-    grid-column: 1/11;
-    grid-row: 12/21;
-    text-align: center;
+#center {
+    
 }
 
-.about-bg, #about {
+#about {
     grid-column: 1/11;
     grid-row: 1/11;
 } 
 
-.portfolio-bg, #portfolio {
-    grid-column: 1/11;
-    grid-row: 11/21;
-}
-
-.contact-bg, #contact {
+#portfolio {
     grid-column: 1/11;
     grid-row: 21/31;
+}
+
+#contact {
+    grid-column: 1/11;
+    grid-row: 31/41;
 }
 
 #title-bg {
@@ -125,7 +118,7 @@ p {
     z-index: -1;
 }
 
-.title {
+#title {
     grid-column: 7/11;
     grid-row: 2/4;
     text-align: center;
@@ -133,7 +126,7 @@ p {
 
 #about {
     grid-column: 1/11;
-    grid-row: 12/21;
+    grid-row: 11/21;
     text-align: center;
     background-image: url("images/bgs/general/ocean-bg.png");
     background-repeat: no-repeat;
@@ -147,17 +140,30 @@ p {
     grid-row: 11/21;
     min-width: 100%;
     min-height: 100%;
-    opacity: 50%;
+    opacity: 15%;
 }
 
  #about p{
-    font-size: 4em;
+    display: grid;
+    grid-column: 3/8;
+    grid-row: 15;
+    font-size: 2em;
 }
 
-#portfolio-bg {
-    background-image: url("images/ocean-bg-2.png");
-    background-repeat: no-repeat;
-    background-size: 100vw 55vw;
+#intro {
+    display: flex;
+    background-color: #00000071;
+}
+
+/* #intro-wrapper{
+    display: flex;    
+    justify-content: center;
+    align-items: center;
+} */
+
+#intro p {
+    display: flex;
+    position: block;
 }
 
 .contact-bg {
